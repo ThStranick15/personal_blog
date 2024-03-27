@@ -1,0 +1,30 @@
+/* RESETS */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+/* let footer reach bottom of page */
+html,body{
+    height: 100%;
+}
+
+body{
+    margin:0 auto;
+    padding: 0 4%
+}
+
+/* make all links no line or purple */
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+button, input{
+    border: none;
+}
+
+button{
+    cursor: pointer;
+}
