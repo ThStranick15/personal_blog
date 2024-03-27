@@ -1,6 +1,5 @@
 const submit = document.querySelector('#submit')
 
-
 submit.addEventListener('click', function (eventObj) {
     eventObj.preventDefault()
 
@@ -8,10 +7,18 @@ submit.addEventListener('click', function (eventObj) {
     let titleInput = document.getElementById("title").value
     let contentInput = document.getElementById("content").value
 
-    console.log(usernameInput)
+    post = {
+        username: usernameInput,
+        title: titleInput,
+        content: contentInput
+    }
 
-    localStorage.setItem('username', usernameInput)
-    localStorage.setItem('title', titleInput)
-    localStorage.setItem('content', contentInput)
+    const posts = JSON.parse(localStorage.getItem('posts')) || []
+    
+    posts.push(post)
+    
+    localStorage.setItem('posts', JSON.stringify(posts))
+
+    window.location = 'blog.html'
 })
 

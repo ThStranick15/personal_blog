@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/resets.css">
-    <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    
 </head>
-<body>
-    <header>
+<body class="column">
+
+    <header class="row justify-between align-center">
         <h1>Thomas' Blog</h1>
+        <div class="row align-center">
+        <nav>
+            <a href="blog.html">Go to Blog</a>
+        </nav>
         <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
-          </label>
+        </label>
+    </div>
     </header>
-    <section>
-        <article>
 
-        </article>
-        <article>
+    <main class="column flex-1">
+
+        <section class="column justify-center align-center">
+            <h2>Welcome to my blog!</h2>
+            <p>Submit anything on your mind below:</p>
+        </section>
+
+        <section class="column justify-center align-center">
             <h2>What's up?</h2>
-            <form id="form" action="">
+            <form id="form" class="column"action="">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Username">
                 <label for="title">Title:</label>
@@ -31,10 +42,14 @@
                 <input type="text" id="content" name="content" placeholder="Put something here">
                 <button id="submit">Submit</button>
             </form>
-        </article>
-    </section>
+        </section>
+
+    </main>
     
-    <footer></footer>
+    <footer class="row justify-between align-center">
+        <p>&copy Copyright</p>
+        <p>Developed By Thomas Stranick</p>
+    </footer>
 
     <script src="assets/js/form.js"></script>
 </body>
