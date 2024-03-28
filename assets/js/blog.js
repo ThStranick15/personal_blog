@@ -1,7 +1,7 @@
 const postsHTML = document.querySelector('.feed')
 
 const rawPosts = localStorage.getItem('posts')
-const postsOutput = JSON.parse(rawPosts)
+const postsOutput = JSON.parse(rawPosts) || []
 
 function addPost(){
      if(postsOutput.length){

@@ -8,7 +8,9 @@ main section{
 
 main section article{
     margin: 5px 0;
+    background-color: #bbcdff;
     border: 2px solid #999;
+    box-shadow: 5px 5px 5px #999;
 }
 
 main section article p{

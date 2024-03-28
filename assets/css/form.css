@@ -1,7 +1,11 @@
 /* Custom CSS */
 
   main section{
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    padding: 10px 0;
+    width: 50%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #999;
   }
   
   main section p{
