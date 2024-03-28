@@ -1,0 +1,23 @@
+main h1{
+    margin: 10px 0;
+}
+
+main section{
+    margin: 10px 0;
+}
+
+main section article{
+    margin: 5px 0;
+    background-color: #bbcdff;
+    border: 2px solid #999;
+    box-shadow: 5px 5px 5px #999;
+}
+
+main section article p{
+    margin: 5px;
+}
+
+main section article p:last-child{
+    padding-top: 5px;
+    border-top: 2px solid black;
+}
